@@ -1,6 +1,9 @@
-html,body {
-        margin: 0px;
-}
+body{
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 75%);
+    }
+    
+
 .container-fluid{
     display: flex;
     justify-content: center;
@@ -9,12 +12,47 @@ html,body {
     height: 100vw;
 }
 .login-box{
+    padding: 45px;
     border-style: solid;
-    border-width: 4px;
-    background-color: rgb(47, 122, 182);
-    border-color: black;
-    min-width: 30%;
+    border-width: 7px;
+    border-color: white;
+    background-color: black;
+    min-width: 40%;
     min-height: 20%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    border-radius: 20%;
+    box-shadow: 14px 14px #FAD961;
+}
+.forget{
+    font-size:.75em;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 30vw;
+    font-size:2em ;
+}
+#user, #pass {
+    border-radius: 15%;
+    padding: .75em;
+}
+#logo{
+    display:flex;
+    align-items: center;
+    max-width: 20em;
+}
+
+#submit{
+    display:flex;
+    max-width: fit-content;
+    justify-content: center;
 }
