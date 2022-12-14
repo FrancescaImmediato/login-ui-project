@@ -3,7 +3,6 @@
     margin: 0px; 
     font-family: 'Montserrat', sans-serif;
 }
-
 .bg{
     min-height: 100vh;
     z-index: -1;
@@ -13,8 +12,7 @@
     background-size: cover;
     background-attachment: fixed;
     padding-top: 15vh;
-  }
-    
+  }  
 .container-fluid{
     display: flex;
     justify-content: center;
@@ -37,7 +35,6 @@
     box-shadow: 14px 14px rgb(0,0,0,.75);
     align-items: center;
 }
-
 form {
     display:flex;
     flex-direction: column;
@@ -55,12 +52,9 @@ form {
     box-shadow: 2px 2px silver;
     color: lightblue;
     font-weight: bold;
-
-
 }
 #pass{
-    margin-bottom:20px;
-    
+    margin-bottom:20px;   
 }
 #user{
     margin-bottom: 5px;
@@ -68,7 +62,6 @@ form {
 #user:hover, #pass:hover{
     box-shadow: 4px 4px azure;
     transform: scale(1.15);
-
 }
 #logo{
     display:flex;
@@ -78,22 +71,28 @@ form {
 }
 #logo:hover{
     transform: scale(1.15);
-
 }
 .forget{
     font-size:.75em;
     display: flex;
-    color:rgba(62, 129, 238, 0.677);
     flex-direction: row;
     justify-content: center;
     gap: 1.5em;
     margin-bottom: 10px;
     font-family: 'Baloo 2', cursive;
 }
-#fu:hover, #fp:hover, .create:hover{
+#fu, #fp, #here {
+    background-color: rgb(0,0,0,0);
+    color:rgba(62, 129, 238, 0.677);
+    border: none;
+}
+#fu:focus, #fp:focus, #here:focus{
+    color: rgb(190, 89, 7);
+    text-decoration: underline;
+}
+#fu:hover, #fp:hover, #here:hover{
     color:white;
 }
-
 #submit{
     margin-top: 5px;
     display:flex;
@@ -109,6 +108,11 @@ form {
 #submit:hover{
     background-color: rgb(253, 249, 249);
     color: #000;
+}
+#submit:active{
+    color: rgb(248,149,52, .66);
+    background-color: lightblue;
+
 }
 .create{
     font-family: 'Baloo 2', cursive;
